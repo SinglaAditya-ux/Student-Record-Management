@@ -1,0 +1,90 @@
+===============================================
+  STUDENT RECORD MANAGEMENT - DOCUMENTATION
+===============================================
+Intern ID  : CITS3437
+Name       : Aditya Singla
+Weeks      : 4 Weeks (3rd June - 1st July)
+Company    : CodTech IT Solutions
+===============================================
+
+1. PROJECT OVERVIEW
+-------------------
+Student Record Management System is a C-based
+console application to manage student academic
+records. It stores student details, calculates
+results automatically and supports full CRUD
+operations (Create, Read, Update, Delete).
+
+2. MODULES / FUNCTIONS
+-----------------------
+a) add_student()
+   - Adds new student with auto roll number
+   - Takes name, course, age and marks input
+   - Auto calculates percentage and grade
+
+b) view_student()
+   - View complete details of one student
+   - Search by roll number
+
+c) view_all_students()
+   - Displays all students in table format
+   - Shows roll, name, course, percentage, grade
+
+d) search_student()
+   - Search student by name
+   - Partial name search supported
+
+e) update_student()
+   - Update name and marks of existing student
+   - Auto recalculates percentage and grade
+
+f) delete_student()
+   - Delete student record permanently
+   - Asks confirmation before deleting
+
+g) calculate_result()
+   - Calculates total marks out of 300
+   - Calculates percentage
+   - Assigns grade automatically
+
+h) save_data() / load_data()
+   - Binary file handling for data persistence
+   - Data loads automatically on startup
+
+3. DATA STRUCTURES USED
+------------------------
+- struct Student: Stores all student info
+  * roll_number (int)
+  * name (char array)
+  * course (char array)
+  * age (int)
+  * marks_math, marks_science, marks_english (float)
+  * total_marks, percentage (float)
+  * grade (char)
+
+4. GRADING SYSTEM
+------------------
+- 90% and above  = Grade A
+- 75% to 89%     = Grade B
+- 60% to 74%     = Grade C
+- 45% to 59%     = Grade D
+- Below 45%      = Grade F
+
+5. CONCEPTS COVERED
+--------------------
+- Structures (struct)
+- Arrays of structures
+- File Handling (fread, fwrite)
+- String functions (strcpy, strstr, strlen)
+- Functions with pointers
+- Switch-Case, Loops
+
+6. HOW TO COMPILE AND RUN
+--------------------------
+Compile:  gcc student_record.c -o student_record
+Run:      ./student_record (Linux/Mac)
+          student_record.exe (Windows)
+
+===============================================
+         END OF DOCUMENTATION
+===============================================
